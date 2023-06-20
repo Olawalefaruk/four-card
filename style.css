@@ -14,88 +14,133 @@ div {
 .background {
   width: 100%;
   min-height: 100vh;
-  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.combine-grid {
+  display: flex;
+  gap: 1.5rem;
+
+
+
+
+
+  /*grid-template-columns: 1fr;
+  
+
+  grid-template-areas: 
+    "first second third"
+    "fourth second sixth"
+    "seventh eighth ninth"
+    "seventh eighth ninth";*/
+}
+
+.first {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
   
 }
 
+.third {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+}
+
+
 h2 {
-  position: absolute;
-  left: 470px;
-  padding-top: 30px;
+  padding-top: 10px;
   font-size: 17px;
   font-weight: 100;
   color: rgb(207, 202, 202);
+
 }
 
 h3 {
-  position: absolute;
-  left: 470px;
-  top: 30px;
-  padding-top: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 17px;
   color: gray;
+  
 }
 
 .new-p {
   text-align: center;
-  left: 450px;
-  top: 83px;
   font-weight: 100;
   font-size: 8px;
-  max-width: 240px;
+  width: 240px;
   color: rgb(207, 202, 202);
-  padding-top: 0px;
+  padding-bottom: 10px;
   line-height: 13px;
 }
 
 .div-1 {
+ /* grid-row-start: 2;
+  grid-row-end: 3;
+
+  grid-area: fourth;*/
+  
+
   background-color: white;
-  margin: 10px;
   display: block;
   height: auto;
-  position: absolute;
-  top: 200px;
-  left:270px;
   border-radius: 4px;
   border-top: 4px solid rgb(113, 235, 235);
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: column;
 }
 
 .div-2 {
+  /*grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+
+  grid-area: second;*/
+
   background-color: white;
-  margin-top: 30px;
   display: block;
   height: auto;
-  position: absolute;
-  top: 100px;
-  left: 470px;
   border-radius: 4px;
   border-top: 4px solid rgb(255, 0, 43);
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
 }
 
 .div-3 {
+  /*grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;*/
+
+
   background-color: white;
-  margin: 10px;
   display: block;
   height: auto;
-  position: absolute;
-  top: 200px;
-  right: 320px;
   border-radius: 4px;
   border-top: 4px solid rgb(15, 139, 139);
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .div-4 {
+   /*grid-column: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+ grid-area: eighth;*/
+
   background-color: white;
-  margin: 0px;
   display: block;
   height: auto;
-  position: absolute;
-  bottom: 120px;
-  left: 470px;
   border-radius: 4px;
   border-top: 4px solid rgb(255, 209, 84);
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
