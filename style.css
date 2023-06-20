@@ -5,6 +5,7 @@ h2,
 h3,
 .new-p,
 p,
+.combine-grid,
 .image,
 div {
   margin: 0;
@@ -24,18 +25,6 @@ div {
   display: flex;
   gap: 1.5rem;
 
-
-
-
-
-  /*grid-template-columns: 1fr;
-  
-
-  grid-template-areas: 
-    "first second third"
-    "fourth second sixth"
-    "seventh eighth ninth"
-    "seventh eighth ninth";*/
 }
 
 .first {
@@ -84,12 +73,6 @@ h3 {
 }
 
 .div-1 {
- /* grid-row-start: 2;
-  grid-row-end: 3;
-
-  grid-area: fourth;*/
-  
-
   background-color: white;
   display: block;
   height: auto;
@@ -101,13 +84,6 @@ h3 {
 }
 
 .div-2 {
-  /*grid-column: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  align-self: center;
-
-  grid-area: second;*/
-
   background-color: white;
   display: block;
   height: auto;
@@ -118,11 +94,6 @@ h3 {
 }
 
 .div-3 {
-  /*grid-column: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;*/
-
-
   background-color: white;
   display: block;
   height: auto;
@@ -132,12 +103,6 @@ h3 {
 }
 
 .div-4 {
-   /*grid-column: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-
- grid-area: eighth;*/
-
   background-color: white;
   display: block;
   height: auto;
@@ -168,14 +133,18 @@ p {
   .background {
     width: 100%;
     min-height: 100vh;
-    position: static;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    
+    align-items: center;
   }
   
+  .combine-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+  }
   h2 {
     position: static;
     left: 470px;
@@ -206,54 +175,43 @@ p {
   
   .div-1 {
     background-color: white;
-    margin: 10px;
     display: block;
     height: auto;
-    position: static;
-    top: 200px;
-    left:270px;
     border-radius: 4px;
     border-top: 4px solid rgb(113, 235, 235);
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: column;
   }
   
   .div-2 {
     background-color: white;
-    margin-top: 0px;
     display: block;
     height: auto;
-    position: static;
-    top: 100px;
-    left: 470px;
     border-radius: 4px;
     border-top: 4px solid rgb(255, 0, 43);
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
   }
   
   .div-3 {
     background-color: white;
-    margin: 10px;
     display: block;
     height: auto;
-    position: static;
-    top: 200px;
-    right: 320px;
     border-radius: 4px;
     border-top: 4px solid rgb(15, 139, 139);
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
   }
   
   .div-4 {
     background-color: white;
-    margin-bottom: 30px;
     display: block;
     height: auto;
-    position: static;
-    bottom: 120px;
-    left: 470px;
     border-radius: 4px;
     border-top: 4px solid rgb(255, 209, 84);
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.15);
+    
   }
   
   h1 {
@@ -273,4 +231,8 @@ p {
     height: 25px;
     margin: 0 10px 10px 140px;
   }
+
+
+
+  
 }
